@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SGA — The Real Story</title>
+<title>Why Shai?</title>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
 <style>
@@ -70,7 +70,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--dark);
 /* ── GRID HELPERS ── */
 .two-col{display:grid;grid-template-columns:1fr 1fr;gap:20px}
 .three-col{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-@media(max-width:700px){.two-col,.three-col{grid-template-columns:1fr}.hn-divider{display:none}.hero-numbers{gap:20px}}
+.four-col{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+@media(max-width:700px){.two-col,.three-col,.four-col{grid-template-columns:1fr}.hn-divider{display:none}.hero-numbers{gap:20px}}
 
 /* ── VERDICT BAND ── */
 .verdict{background:var(--navy);padding:60px 24px;overflow:hidden}
@@ -140,7 +141,7 @@ footer{background:var(--dark);padding:40px 24px;text-align:center;font-size:12px
 <!-- ═══ HERO ═══ -->
 <section class="hero">
   <video class="hero-video" autoplay muted loop playsinline>
-    <source src="ssstik.io_1778544700425.mp4" type="video/mp4">
+    <source src="https://alephapps.github.io/why-shai/shai-edit.mp4" type="video/mp4">
   </video>
   <div class="hero-bg-text">SGA</div>
   <div class="hero-content">
@@ -148,9 +149,9 @@ footer{background:var(--dark);padding:40px 24px;text-align:center;font-size:12px
     <h1 class="hero-headline reveal delay-1">NOT JUST<br><em>FREE THROWS</em></h1>
     <p class="hero-sub reveal delay-2">The internet has a narrative, but the numbers have an answer. Casuals truly believe that Shai is not worthy of his ring and MVP and that he is only good because of free throws.Here's the real case for why Shai Gilgeous-Alexander is the most efficient and consistent scorer in the NBA, and an all time great in the making.</p>
     <div class="hero-numbers reveal delay-3">
-      <div class="hn"><div class="hn-val">32.7</div><div class="hn-label">PPG — scoring title</div></div>
+      <div class="hn"><div class="hn-val">31.1</div><div class="hn-label">PPG</div></div>
       <div class="hn-divider"></div>
-      <div class="hn"><div class="hn-val">51.9%</div><div class="hn-label">FG%</div></div>
+      <div class="hn"><div class="hn-val">55.3%</div><div class="hn-label">FG%</div></div>
       <div class="hn-divider"></div>
       <div class="hn"><div class="hn-val">MVP</div><div class="hn-label">2024–25 award</div></div>
       <div class="hn-divider"></div>
@@ -168,7 +169,7 @@ footer{background:var(--dark);padding:40px 24px;text-align:center;font-size:12px
   <!-- The key proof: FG-only PPG leaders -->
   <div class="card reveal" style="margin-bottom:20px">
     <p class="card-label">2024–25 scoring leaders if <u>free throws were removed</u></p>
-    <p style="font-size:14px;color:var(--muted);margin-bottom:20px;line-height:1.5">If you were to take away <strong>every single free throw</strong> from the NBA, SGA would <strong>still lead the league in PPG</strong> during his MVP season. </p>
+    <p style="font-size:14px;color:var(--muted);margin-bottom:20px;line-height:1.5">If you were to take away <strong>every single free throw</strong> from the NBA, <em>SGA would still lead the league in PPG</em> during his MVP season. </p>
     <p class="card-label"><strong>PPG with no FTs</strong></p>
     <div class="ctx-bar" id="ftRemovalBars">
       <div class="ctx-row"><span class="ctx-name" style="color:var(--orange);font-weight:700">SGA</span><div class="ctx-track"><div class="ctx-fill" style="width:0%;background:var(--orange)" data-w="24.5"></div></div><span class="ctx-val" style="color:var(--orange)">~24.5</span></div>
@@ -185,14 +186,14 @@ footer{background:var(--dark);padding:40px 24px;text-align:center;font-size:12px
   <div class="two-col">
     <div class="card reveal delay-1">
       <p class="card-label">He doesn't even lead in free throw attempts</p>
-      <p style="font-size:14px;color:var(--muted);line-height:1.6;margin-bottom:16px">SGA led the NBA in <em>made</em> free throws, but that's because he <em>makes</em> them. He's never led the league in <em>attempts.</em></p>
+      <p style="font-size:14px;color:var(--muted);line-height:1.6;margin-bottom:16px">SGA led the NBA in <em>made</em> free throws, but that's because he <em>makes</em> them. <em style="color:var(--orange);font-weight:600">He's never led the league in attempts.</em></p>
       <div class="chart-wrap" style="height:220px">
         <canvas id="ftaCompare" role="img" aria-label="Horizontal bar showing SGA has 8.8 FTA vs Harden peak at 13.2, not leading the league">FTA comparison</canvas>
       </div>
     </div>
     <div class="card reveal delay-2">
       <p class="card-label">Shai earns his FTs</p>
-      <p style="font-size:14px;color:var(--muted);line-height:1.6;margin-bottom:16px">SGA led the entire NBA in drives per game. More drives -> more contact -> more fouls. Luka draws <em>more free throws </em> while taking <em>~7 less drives per game</em>. Who's the real free throw merchant?</p>
+      <p style="font-size:14px;color:var(--muted);line-height:1.6;margin-bottom:16px">SGA led the entire NBA in drives per game. More drives -> more contact -> more fouls. <em style="color:var(--orange);font-weight:600">Luka draws more free throws while taking ~7 less drives per game.</em> Who's the real free throw merchant?</p>
       <div class="chart-wrap" style="height:220px">
         <canvas id="drivesVsFta" role="img" aria-label="Scatter showing SGA drives 20+ per game for 8.8 FTA vs Luka 13.4 drives for 10.1 FTA">Drives vs FTA</canvas>
       </div>
@@ -203,7 +204,7 @@ footer{background:var(--dark);padding:40px 24px;text-align:center;font-size:12px
 <!-- ═══ VERDICT BAND ═══ -->
 <div class="verdict">
   <div class="verdict-inner">
-    <h2 class="verdict-title reveal">"Two years ago I averaged almost <em>11 free throws</em> a game... When I wasn’t sending their best favorite player home, no one cared... Now that I’m doing it and I’m averaging <em>9 free throws</em>, the whole world is exploding about it."</h2>
+    <h2 class="verdict-title reveal">"I don't shoot 100% from the field, I don't shoot 100% from the free throw line, and I certainly don't shoot that from three so <em>I got a lot of improvement I need to do, and I'll continue to do so.</em>"</h2>
     <p style="font-size:12px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.3);margin-top:16px" class="reveal">— Shai Gilgeous-Alexander</p>
   </div>
 </div>
@@ -222,8 +223,8 @@ footer{background:var(--dark);padding:40px 24px;text-align:center;font-size:12px
 
   <div class="two-col" style="margin-bottom:20px">
     <div class="callout reveal">
-      <div class="callout-num">63.7%</div>
-      <div class="callout-desc"><br>True Shooting %: when you count everything (field goals + 3s + free throws)<br><br>SGA converts at elite efficiency even at 32.7 PPG. Most high volume scorers trade efficiency for quantity. Shai doesn't.</div>
+      <div class="callout-num">66.5%</div>
+      <div class="callout-desc"><br>True Shooting %: when you count everything (field goals + 3s + free throws)<br><br>SGA converts at elite efficiency even at 31.1 PPG. Most high volume scorers trade efficiency for quantity. Shai doesn't.</div>
     </div>
     <div class="card reveal delay-1" style="display:flex;flex-direction:column;justify-content:center">
       <p class="card-label">Efficiency vs scoring volume 2024–25</p>
@@ -239,8 +240,8 @@ footer{background:var(--dark);padding:40px 24px;text-align:center;font-size:12px
 
   <!-- Shot quality chart -->
   <div class="card reveal">
-    <p class="card-label">Scoring breakdown — how SGA actually scores (2024–25)</p>
-    <p style="font-size:14px;color:var(--muted);line-height:1.6;margin-bottom:20px;max-width:680px">SGA scores from everywhere. His 302 driving layups led the NBA — more than Giannis, who is the most prolific paint scorer since Shaq. He also added a midrange game that consistently grades out among the best in the league and improved his 3-point shooting to a career-high 37.5% on 5.7 attempts.</p>
+    <p class="card-label">How the MVP gets his buckets (2024–25 season)</p>
+    <p style="font-size:14px;color:var(--muted);line-height:1.6;margin-bottom:20px;max-width:680px">SGA scores from everywhere. <em style="color:var(--orange);font-weight:600">His 302 driving layups led the NBA during his MVP season. That's more than Giannis,</em> who is probably the best paint scorer since Shaq. He also added a midrange game that is among the best in the league and <em>improved his 3 point shooting to a career-high 37.5%.</em> He is reviving the most beautiful shot in basketball, the midrange jumper.</p>
     <div class="two-col">
       <div>
         <div class="legend">
@@ -278,23 +279,24 @@ footer{background:var(--dark);padding:40px 24px;text-align:center;font-size:12px
 
   <div class="two-col" style="margin-bottom:20px">
     <div class="hq reveal">
-      <p class="hq-text">"Two years ago, I averaged almost 11 free throws a game but we finished 10th and no one cared. When I wasn't sending their best favorite player home — then no one cared that I was shooting 11 free throws a night."</p>
+      <p class="hq-text" style="width: 75%">"Two years ago I averaged almost 11 free throws a game... When I wasn’t sending their best favorite player home, no one cared... Now that I’m doing it and I’m averaging 9 free throws, the whole world is exploding about it."</p>
       <p class="hq-attr">— SGA via Richard Jefferson, ESPN</p>
+      <img src="https://cdn.prod.website-files.com/604ba4a384680166e9d0150d/6285e2dee303873e2a904132_shai.png" style="position:absolute;bottom:16px;right:16px;max-width:25%;">
     </div>
     <div class="card reveal delay-1" style="display:flex;flex-direction:column;justify-content:center;gap:20px">
       <div>
-        <div style="font-size:12px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted);margin-bottom:12px">Harden vs SGA — the foul-drawing comparison</div>
+        <div style="font-size:12px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted);margin-bottom:12px">Harden vs SGA</div>
         <div class="chart-wrap" style="height:200px">
           <canvas id="hardenVsSga" role="img" aria-label="Side by side bar showing Harden peak FTA was 13.2 vs SGA at 8.8 FTA, yet SGA scores more efficiently">Harden vs SGA FTA comparison</canvas>
         </div>
       </div>
-      <p style="font-size:13px;color:var(--muted);line-height:1.6">Harden's peak FTA was <strong>13.2 per game</strong> in 2018–19 — called a "genius" for it. SGA averages <strong>8.8</strong> and is called a merchant. Both are unstoppable offensive players. Only one gets hate for it.</p>
+      <p style="font-size:13px;color:var(--muted);line-height:1.6">Harden's peak FTA was <strong>13.2 per game</strong> in 2018–19 and is of the best offensive players of all time. SGA averages <strong>8.8</strong> and is called a merchant. Both are unstoppable offensive players. Only one gets hate for it, but the other was even more unethical.</p>
     </div>
   </div>
 
   <div class="card reveal">
-    <p class="card-label">In NBA history — 90 seasons of 30+ PPG. Where do SGA's free throws rank?</p>
-    <p style="font-size:14px;color:var(--muted);line-height:1.6;margin-bottom:16px">Of the 90 times in NBA history a player averaged 30+ points per game in a season, <strong>52 of those seasons had 10+ FTA per game</strong>. SGA's 8.8 FTA places him <strong>66th out of 90</strong> — literally below average for the historical 30+ PPG club. The narrative doesn't match the history.</p>
+    <p class="card-label">90 seasons of 30+ PPG. Where do SGA's free throws rank?</p>
+    <p style="font-size:14px;color:var(--muted);line-height:1.6;margin-bottom:16px">Of the 90 times in NBA history a player averaged 30+ ppg, 52 of those seasons had 10+ FTA per game. <em style="color:var(--orange);font-weight:600">Shai's 8.8 FTA places him 66th out of 90. He is literally below average for the 30+ PPG club.</em></p>
     <div class="chart-wrap" style="height:120px">
       <canvas id="historicalFta" role="img" aria-label="Number line showing SGA at 8.8 FTA is well below the average for historic 30+ PPG seasons">Historical FTA context</canvas>
     </div>
@@ -308,9 +310,9 @@ footer{background:var(--dark);padding:40px 24px;text-align:center;font-size:12px
 
   <!-- 3-season 50/50/87 club -->
   <div class="card reveal" style="margin-bottom:20px">
-    <p class="card-label">3 straight seasons</p>
-    <p style="font-size:14px;color:var(--muted);line-height:1.6;max-width:700px;margin-bottom:20px">In NBA history, only two players have averaged 30+ points per game shooting 50%+ from the field for <em>three consecutive seasons</em>: Michael Jordan and Shai Gilgeous-Alexander.</p>
-    <div class="three-col">
+    <p class="card-label">4 straight seasons</p>
+    <p style="font-size:14px;color:var(--muted);line-height:1.6;max-width:700px;margin-bottom:20px">In NBA history, <em style="color:var(--orange);font-weight:600">only two players have averaged 30+ points per game shooting 50%+ from the field for four consecutive seasons: Michael Jordan and Shai Gilgeous-Alexander.</em></p>
+    <div class="four-col">
       <div style="text-align:center;padding:20px;background:#F9F7F4;border-radius:12px">
         <div style="font-size:12px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin-bottom:8px">2022–23</div>
         <div style="font-family:'Bebas Neue',sans-serif;font-size:44px;color:var(--dark);line-height:1">31.4</div>
@@ -321,21 +323,26 @@ footer{background:var(--dark);padding:40px 24px;text-align:center;font-size:12px
         <div style="font-family:'Bebas Neue',sans-serif;font-size:44px;color:var(--dark);line-height:1">30.1</div>
         <div style="font-size:13px;color:var(--muted);margin-top:4px">PPG · 53.5% FG · 87.4% FT</div>
       </div>
-      <div style="text-align:center;padding:20px;background:var(--orange);border-radius:12px">
-        <div style="font-size:12px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.7);margin-bottom:8px">2024–25 🏆</div>
-        <div style="font-family:'Bebas Neue',sans-serif;font-size:44px;color:#FFF;line-height:1">32.7</div>
-        <div style="font-size:13px;color:rgba(255,255,255,0.8);margin-top:4px">PPG · 51.9% FG · 89.8% FT</div>
+      <div style="text-align:center;padding:20px;background:#F9F7F4;border-radius:12px">
+        <div style="font-size:12px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin-bottom:8px">2024–25 🏆</div>
+        <div style="font-family:'Bebas Neue',sans-serif;font-size:44px;color:var(--dark);line-height:1">32.7</div>
+        <div style="font-size:13px;color:var(--muted);margin-top:4px">PPG · 51.9% FG · 89.8% FT</div>
+      </div>
+      <div style="text-align:center;padding:20px;background:#F9F7F4;border-radius:12px">
+        <div style="font-size:12px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin-bottom:8px">2025–26</div>
+        <div style="font-family:'Bebas Neue',sans-serif;font-size:44px;color:var(--dark);line-height:1">31.1</div>
+        <div style="font-size:13px;color:var(--muted);margin-top:4px">PPG · 55.3% FG · 87.9% FT</div>
       </div>
     </div>
     <div style="margin-top:20px;padding:16px 20px;background:#F0F7FF;border-radius:10px;border-left:3px solid var(--blue)">
-      <p style="font-size:14px;font-weight:600;color:var(--blue)">Only two players in NBA history have done this three seasons in a row:</p>
+      <p style="font-size:14px;font-weight:600;color:var(--blue)">Only two players in NBA history have done this four seasons in a row:</p>
       <p style="font-size:14px;color:var(--mid);margin-top:4px">Michael Jordan &nbsp;·&nbsp; <strong>Shai Gilgeous-Alexander</strong></p>
     </div>
   </div>
 
   <div class="card reveal" style="margin-bottom:20px">
-    <p class="card-label">Longest 20-point game streak in 60+ years — a visual</p>
-    <p style="font-size:14px;color:var(--muted);line-height:1.6;margin-bottom:16px;max-width:680px">SGA scored 20+ points in 72 consecutive games — the longest streak since Wilt Chamberlain (80) and Oscar Robertson (76) in the 1960s. Every orange dot below is a game. Every game, he delivered.</p>
+    <p class="card-label">Longest 20-point game streak</p>
+    <p style="font-size:14px;color:var(--muted);line-height:1.6;margin-bottom:16px;max-width:680px">SGA scored 20+ points in <em style="color:var(--orange);font-weight:600">140 consecutive games. The longest streak since Wilt Chamberlain with 127.</em></p>
     <div class="streak-visual" id="streakDots"></div>
     <div style="display:flex;gap:20px;margin-top:12px;font-size:12px;color:var(--muted)">
       <div class="leg"><div class="leg-dot" style="background:var(--orange)"></div>20+ point game (72 straight)</div>
@@ -346,8 +353,8 @@ footer{background:var(--dark);padding:40px 24px;text-align:center;font-size:12px
 
   <!-- Season scoring chart with floor annotation -->
   <div class="card reveal">
-    <p class="card-label">Game-by-game scoring — 2024–25 regular season</p>
-    <p style="font-size:14px;color:var(--muted);line-height:1.6;margin-bottom:16px">His "bad nights" don't look like bad nights. The average NBA starter scores ~12 points. SGA's floor on a rough game is well above that. The chart below shows his scoring distribution — the baseline almost never dips below 20.</p>
+    <p class="card-label">Game-by-game scoring (2024–25)</p>
+    <p style="font-size:14px;color:var(--muted);line-height:1.6;margin-bottom:16px">His "bad nights" don't look like bad nights. The average NBA starter scores ~12 points. Shai having a rough game is still well above that. The chart below shows his scoring distribution. The baseline never drops below 20.</p>
     <div class="chart-wrap" style="height:280px">
       <canvas id="gameByGame" role="img" aria-label="Line chart of SGA game scores showing consistent 25-40 point performances with very few dips below 20">Game by game scoring</canvas>
     </div>
@@ -356,23 +363,23 @@ footer{background:var(--dark);padding:40px 24px;text-align:center;font-size:12px
   <div class="fact-grid reveal" style="margin-top:0">
     <div class="fact-chip">
       <div class="fact-chip-icon">🏀</div>
-      <div class="fact-chip-stat">72</div>
-      <div class="fact-chip-desc">Consecutive 20+ point games — longest streak since the 1960s (Wilt: 80, Oscar: 76). SGA is the 3rd longest ever.</div>
+      <div class="fact-chip-stat">140</div>
+      <div class="fact-chip-desc">Consecutive 20+ point games (record holder)</div>
     </div>
     <div class="fact-chip">
       <div class="fact-chip-icon">📈</div>
       <div class="fact-chip-stat">49</div>
-      <div class="fact-chip-desc">30+ point games in 2024–25 — most in the league, led the NBA. On bad nights, he still drops 25.</div>
+      <div class="fact-chip-desc">30+ point games in 2024–25. The most in the league. Below 30 is a bad night for him.</div>
     </div>
     <div class="fact-chip">
       <div class="fact-chip-icon">💥</div>
       <div class="fact-chip-stat">13</div>
-      <div class="fact-chip-desc">40+ point games in 2024–25 — more than any other player. Not a fluke, a pattern.</div>
+      <div class="fact-chip-desc">40+ point games in 2024–25. That's more than any other player.</div>
     </div>
     <div class="fact-chip">
       <div class="fact-chip-icon">🎯</div>
       <div class="fact-chip-stat">4</div>
-      <div class="fact-chip-desc">50+ point games — including a career-high 52. In a single season. As a guard.</div>
+      <div class="fact-chip-desc">50+ point games, including a career-high 52. In a single season.</div>
     </div>
   </div>
 </section>
@@ -385,44 +392,12 @@ footer{background:var(--dark);padding:40px 24px;text-align:center;font-size:12px
   <div class="two-col" style="margin-bottom:20px">
     <div class="callout reveal" style="background:var(--navy)">
       <div class="callout-num" style="color:var(--orange)">1.0</div>
-      <div class="callout-desc" style="color:rgba(255,255,255,0.8)">Blocks per game over 76 games. As a 6'6" guard. Most NBA centers don't average a block per game. SGA does it from the perimeter.</div>
+      <div class="callout-desc" style="color:rgba(255,255,255,0.8)">Blocks per game over 76 games. As a GUARD. Some NBA centers don't average a block per game.</div>
     </div>
     <div class="card reveal delay-1" style="display:flex;flex-direction:column;justify-content:center;gap:12px">
-      <p class="card-label">Defensive stats — SGA vs. elite 2-way guards</p>
+      <p class="card-label">SGA vs. elite 2-way guards</p>
       <div class="chart-wrap" style="height:220px">
         <canvas id="defenseChart" role="img" aria-label="Grouped bar showing SGA leads or matches elite guards in steals and blocks">Defense comparison</canvas>
-      </div>
-    </div>
-  </div>
-
-  <div class="card reveal">
-    <p class="card-label">Steals + blocks (stocks) per game — historical guard comparison</p>
-    <p style="font-size:14px;color:var(--muted);line-height:1.6;margin-bottom:16px;max-width:680px">SGA averaged 2.7 "stocks" (steals + blocks) per game in 2024–25. For context: Michael Jordan's best defensive season was 2.9 stocks/game. SGA is doing this while also leading the league in scoring. That's not a role player's defense — that's elite, two-way basketball.</p>
-    <div class="ctx-bar" id="stocksBars">
-      <div class="ctx-row">
-        <span class="ctx-name" style="color:var(--orange);font-weight:700">SGA ('25)</span>
-        <div class="ctx-track"><div class="ctx-fill" style="width:0%;background:var(--orange)" data-w="2.7"></div></div>
-        <span class="ctx-val" style="color:var(--orange)">2.7</span>
-      </div>
-      <div class="ctx-row">
-        <span class="ctx-name">MJ (best)</span>
-        <div class="ctx-track"><div class="ctx-fill" style="width:0%;background:#AAA" data-w="2.9"></div></div>
-        <span class="ctx-val">2.9</span>
-      </div>
-      <div class="ctx-row">
-        <span class="ctx-name">Kawhi ('17)</span>
-        <div class="ctx-track"><div class="ctx-fill" style="width:0%;background:#AAA" data-w="2.4"></div></div>
-        <span class="ctx-val">2.4</span>
-      </div>
-      <div class="ctx-row">
-        <span class="ctx-name">Kobe (best)</span>
-        <div class="ctx-track"><div class="ctx-fill" style="width:0%;background:#AAA" data-w="2.1"></div></div>
-        <span class="ctx-val">2.1</span>
-      </div>
-      <div class="ctx-row">
-        <span class="ctx-name">LeBron (best)</span>
-        <div class="ctx-track"><div class="ctx-fill" style="width:0%;background:#AAA" data-w="2.0"></div></div>
-        <span class="ctx-val">2.0</span>
       </div>
     </div>
   </div>
@@ -438,24 +413,18 @@ footer{background:var(--dark);padding:40px 24px;text-align:center;font-size:12px
   <div class="video-grid">
     <div class="reveal delay-1">
       <div class="video-card">
-        <iframe src="https://www.youtube.com/embed/YO1sANFGGkA" title="SGA highlights ball handling" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/qlA5J8q1ggk?si=4r9cbGX9hAwLedEc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
-      <div class="video-label">The Handles & Footwork</div>
-      <div class="video-sub">Watch how he creates separation — not flopping, just moves</div>
     </div>
     <div class="reveal delay-2">
       <div class="video-card">
-        <iframe src="https://www.youtube.com/embed/Ul0QC1mYRq4" title="SGA scoring compilation" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/qlA5J8q1ggk?si=4r9cbGX9hAwLedEc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
-      <div class="video-label">Scoring From Everywhere</div>
-      <div class="video-sub">Paint, mid-range, 3s — not just the line</div>
     </div>
     <div class="reveal delay-3">
       <div class="video-card">
-        <iframe src="https://www.youtube.com/embed/ixMvB0SQNPY" title="SGA MVP season best plays" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/qlA5J8q1ggk?si=4r9cbGX9hAwLedEc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
-      <div class="video-label">The MVP Season Highlights</div>
-      <div class="video-sub">Full season of elite, two-way dominance</div>
     </div>
   </div>
 </section>
@@ -463,7 +432,7 @@ footer{background:var(--dark);padding:40px 24px;text-align:center;font-size:12px
 <!-- ═══ FINALE ═══ -->
 <div class="finale">
   <h2 class="finale-title reveal">THE <em>NUMBERS</em><br>DON'T LIE.</h2>
-  <p class="finale-sub reveal">Remove the free throws — still leads the league. Add the defense — top 5 historically for a guard. Look at the consistency — longest streak in 60 years. SGA is not a product of foul-baiting. He's one of the best to ever do it.</p>
+  <p class="finale-sub reveal">Remove the free throws and he still leads the league. Add the defense and he's top 5 historically for a guard. Look at the consistency! He has the longest streak of 20 point games ever. Shai Gilgeous-Alexander is not a foul-baiter, free throw merchant, or flopper. <em style="color:var(--orange)">He's the best to ever do it.</em></p>
 
   <div style="display:flex;gap:32px;justify-content:center;flex-wrap:wrap;margin-top:48px" class="reveal delay-1">
     <div class="hn"><div class="hn-val">🏆</div><div class="hn-label">NBA Champion</div></div>
@@ -627,7 +596,7 @@ new Chart(document.getElementById('hardenVsSga'),{
     labels:['FTA / game','FG% (field)','PPG','True Shooting'],
     datasets:[
       {label:'Harden (peak \'19)',data:[13.2,44.2,36.1,60.9],backgroundColor:'rgba(100,100,100,0.5)',borderRadius:4,borderSkipped:false},
-      {label:'SGA (2024–25)',data:[8.8,51.9,32.7,63.7],backgroundColor:'#EF3B24',borderRadius:4,borderSkipped:false},
+      {label:'SGA (2025–26)',data:[9.0,51.9,55.3,66.5],backgroundColor:'#EF3B24',borderRadius:4,borderSkipped:false},
     ]
   },
   options:{
